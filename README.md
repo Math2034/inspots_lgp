@@ -1,4 +1,6 @@
 # inspots_lgp
+![GitHub](https://img.shields.io/github/license/Math2034/inspots_lgp)
+
 
 ## Integrantes do grupo
 - `Rayra`: Negócios, Design, Games
