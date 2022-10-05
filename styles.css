@@ -1,0 +1,75 @@
+html,body{
+    scroll-behavior: smooth;
+}
+
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 10%;
+    float: left;
+    margin-top: 10%;
+}
+.orange{
+    color: #FC7A1E;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}
+
+.container{
+    background-color: rgb(107, 105, 105);
+    width: 70%;      
+}
+
+nav{
+    position: fixed;
+}
+
+.prato{
+    margin-left: 15%;
+    max-width: 600px;
+}
+
+.curiosidades{
+    margin-top: 10%;
+    text-align: left;
+    margin-left: 3%;
+}
+
+.laranja {
+  margin-left: 202px;
+  float: left;
+  background-color: #FC7A1E;
+  margin-top: 7%;
+  color: white;
+  max-width: 2000px;
+}
+
+.branco {
+    margin-right: 202px;
+    float: right;
+    background-color: white;
+    margin-top: 7%;
+    color: #FC7A1E;
+    max-width: 2000px
+}
+
+#titulo{
+    margin-top: 5%;
+}
+
+#texto{
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: rgb(201, 199, 199);
+}
+
+#quem{
+    margin-top: 15%;
+}
