@@ -9,14 +9,9 @@ aside {
     float: left;
     margin-top: 10%;
 }
+
 .orange{
     color: #FC7A1E;
-}
-
-.carousel-item.active,
-.carousel-item-next,
-.carousel-item-prev{
-    display:block;
 }
 
 .container{
@@ -24,8 +19,12 @@ aside {
     width: 70%;      
 }
 
-nav{
+​.navbar{
+    overflow: hidden;
+    background-color: white;
     position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .prato{
@@ -34,9 +33,7 @@ nav{
 }
 
 .curiosidades{
-    margin-top: 10%;
-    text-align: left;
-    margin-left: 3%;
+    text-align: center;
 }
 
 .laranja {
@@ -58,18 +55,28 @@ nav{
 }
 
 #titulo{
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 #texto{
     width: 30%;
     padding-left: 15px;
     margin-left: 15px;
+    margin-top: 10%;
     float: right;
     font-style: italic;
-    background-color: rgb(201, 199, 199);
 }
 
 #quem{
-    margin-top: 15%;
+    margin-top: 10%;
+}
+
+#quems{
+    margin-top: 10%;
+} 
+
+#carouselExampleSlidesOnly{
+    background-color: rgb(230, 230, 230);
+    width: 50%;
+    margin-left: 25%;
 }

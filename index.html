@@ -5,20 +5,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bem-vindo</title>
+  <title>Inspots</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
-  <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../inspots_lgp-main/img/logo.png">
 
 </head>
   
   <body>
     <!--Menu responsivo-->
-    <nav class="navbar navbar-expand-lg bg-light shadow-sm p-3 mb-5 bg-body rounded border" id="nav">
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm p-3 mb-5 bg-body" id="navbar" style="position: fixed; width: 100%; z-index: 9;">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="../img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"> <b>Inspots</b>
+            <img src="../inspots_lgp-main/img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"> <b>Inspots</b>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -42,72 +42,37 @@
       <h1 class="fw-bolder">Pratos veganos e vegetarianos <h1 class="orange">em qualquer estabelecimento</h1></h1>
     </aside>
     <img src="../inspots_lgp-main/img/pratoimg.png" class="prato" width="30%" >
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
-    
-<section class="curiosidades">
-    <h1 class="text-center fw-bolder" id="cusioso">Curiosidades do Veganismo</h1>
-    <div id="carouselExampleIndicators" class="carousel slide" data-mdb-ride="carousel">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-mdb-target="#carouselExampleIndicators"
-          data-mdb-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-mdb-target="#carouselExampleIndicators"
-          data-mdb-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-mdb-target="#carouselExampleIndicators"
-          data-mdb-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
+    <main>
+      <h1 class="text-center fw-bolder" id="curiosidades">Curiosidades do Veganismo</h1>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="text-center fw-bolder" id=titulo>1. O termo "veganismo" não é algo novo</h2>
+                <p class="text-center fw-bolder fs-5">A palavra veganismo foi usado pela primeira vez em 1944, por Donald
+                  Watson. <br> Ele queria definir um tipo de vegetarianismo ainda mais
+                  restrito, que exclui todos os alimentos derivados <br> de animais por
+                  razões éticas. Por isso, é diferente do vegetarianismo, que permite
+                  alimentos de origem <br>animal, porém somente os que não implicam
+                  sacrifício dos animais.</p>
+              </div>
+              <div class="carousel-item">
+                <h2 class="text-center fw-bolder" id=curiosidades>2. Vontade de comer carne</h2>
+                <p class="text-center fw-bolder fs-5" id="titulo">
+                  Comer carne pode ser algo mais cultural do que uma necessidade
+                  biológica. <br> Muitos adeptos do veganismo relatam como perderam
+                  totalmente a vontade de comer carne depois de <br> se acostumarem aos seus
+                  hábitos alimentares veganos. Muitos desses adeptos apontam que <br> a carne
+                  deixa de despertar desejo depois de um tempo sem consumi-la.
+                  </p>
+              </div>
+              <div class="carousel-item">
+                  
+              </div>
+          </div>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <h2 class="text-center fw-bolder" id=titulo>1. O termo "veganismo" não é algo novo</h2>
-          <p class="text-center fw-bolder fs-5" id="texto">A palavra veganismo foi usado pela primeira vez em 1944, por Donald
-            Watson. <br> Ele queria definir um tipo de vegetarianismo ainda mais
-            restrito, que exclui todos os alimentos derivados <br> de animais por
-            razões éticas. Por isso, é diferente do vegetarianismo, que permite
-            alimentos de origem <br>animal, porém somente os que não implicam
-            sacrifício dos animais.</p>
-        </div>
-        <div class="carousel-item">
-          <h2 class="fw-bolder" id=titulo>2. Vontade de comer carne</h2>
-          <p class="fw-bolder fs-5" id="texto">
-            Comer carne pode ser algo mais cultural do que uma necessidade
-            biológica. <br> Muitos adeptos do veganismo relatam como perderam
-            totalmente a vontade de comer carne depois de <br> se acostumarem aos seus
-            hábitos alimentares veganos. Muitos desses adeptos apontam que <br> a carne
-            deixa de despertar desejo depois de um tempo sem consumi-la.
-            </p>
-        </div>
-        <div class="carousel-item">
-          <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits"/>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
-  
-
-    <h1 class="text-left fw-bolder">Quem Somos?</h1>
+  </main>   
+    <h1 class="text-left fw-bolder" id="quems">Quem Somos?</h1>
     <aside class="laranja">
       <h1 class="text-left fw-bolder">História</h1>
       <p id="quem" class="fw-bolder">
