@@ -3,7 +3,7 @@ Site de divulgação da nossa empresa
 
 ![GitHub](https://img.shields.io/github/license/Math2034/inspots_lgp)
 
-Técnologias usadas: HTLM5, CSS3 e Bootstrap
+Técnologias utilizadas: HTLM5, CSS3 e Bootstrap
 
 ## Integrantes do grupo
 - `Rayra`: Negócios, Design, Games
