@@ -10,8 +10,21 @@ aside {
     margin-top: 10%;
 }
 
-.orange{
+.text-center{
+    margin-top: 150px;
+}
+
+.appstore{
+    margin-top: 5%;
+}
+
+.texto1{
+    font-size: 400%;
+}
+
+.texto2{
     color: #FC7A1E;
+    font-size: 400%;
 }
 
 .container{
@@ -19,7 +32,7 @@ aside {
     width: 70%;      
 }
 
-​.navbar{
+​.menu{
     overflow: hidden;
     background-color: white;
     position: fixed;
@@ -28,12 +41,9 @@ aside {
 }
 
 .prato{
-    margin-left: 15%;
+    margin-left: 20%;
     max-width: 600px;
-}
-
-.curiosidades{
-    text-align: center;
+    margin-top: 10%;
 }
 
 .laranja {
@@ -49,13 +59,14 @@ aside {
     margin-right: 202px;
     float: right;
     background-color: white;
-    margin-top: 7%;
+    margin-top: 3.5%;
     color: #FC7A1E;
     max-width: 2000px
 }
 
-#titulo{
-    margin-top: 10%;
+#titulo1{
+    text-align: center;
+    padding-top: 15%;
 }
 
 #texto{
@@ -75,8 +86,26 @@ aside {
     margin-top: 10%;
 } 
 
+#valores{
+    padding-top: 12%;
+}
+
 #carouselExampleSlidesOnly{
-    background-color: rgb(230, 230, 230);
     width: 50%;
     margin-left: 25%;
+    text-align: center;
+}
+
+#nav{
+    position: fixed; 
+    width: 100%; 
+    z-index: 9;
+}
+
+.carousel-item{
+    position: relative;
+}
+
+.seção{
+    margin-top: 15%;
 }

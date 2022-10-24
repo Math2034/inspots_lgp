@@ -15,8 +15,8 @@
   
   <body>
     <!--Menu responsivo-->
-    <nav class="navbar navbar-expand-lg bg-light shadow-sm p-3 mb-5 bg-body" id="navbar" style="position: fixed; width: 100%; z-index: 9;">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm p-3 mb-5 bg-body rounded border menu" id="nav">
+      <div class="container-fluid fixed">
         <a class="navbar-brand" href="#">
             <img src="../inspots_lgp-main/img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"> <b>Inspots</b>
         </a>
@@ -39,55 +39,144 @@
     </nav>
     <!--Fim do Menu responsivo-->
     <aside>
-      <h1 class="fw-bolder">Pratos veganos e vegetarianos <h1 class="orange">em qualquer estabelecimento</h1></h1>
+      <h1 class="texto1 fw-bolder">Pratos veganos e vegetarianos <h1 class="texto2 fw-bolder">em qualquer estabelecimento</h1></h1>
+      <a href="https://play.google.com/store/games?hl=pt_BR&gl=US"><img class="appstore" src="../inspots_lgp-main/img/Google play.png" width="70%"></a>
+      <a href="https://www.apple.com/br/app-store/"><img class="appstore" src="../inspots_lgp-main/img/App store.png" width="70%"></a>
     </aside>
-    <img src="../inspots_lgp-main/img/pratoimg.png" class="prato" width="30%" >
+    <img src="../inspots_lgp-main/img/pratoimg.png" class="prato" width="35%" >
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <main>
-      <h1 class="text-center fw-bolder" id="curiosidades">Curiosidades do Veganismo</h1>
+
+      <h1 class="text-center fw-bolder" id="titulo1">Curiosidades do Veganismo</h1>
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
               <div class="carousel-item active">
-                <h2 class="text-center fw-bolder" id=titulo>1. O termo "veganismo" não é algo novo</h2>
-                <p class="text-center fw-bolder fs-5">A palavra veganismo foi usado pela primeira vez em 1944, por Donald
-                  Watson. <br> Ele queria definir um tipo de vegetarianismo ainda mais
-                  restrito, que exclui todos os alimentos derivados <br> de animais por
+                <h2 class="text-center fw-bolder text-carroussel">1. O termo "veganismo" não é algo novo</h2>
+                <p class="fw-bolder fs-3">A palavra veganismo foi usado pela primeira vez em 1944, por Donald
+                  Watson. Ele queria definir um tipo de vegetarianismo ainda mais
+                  restrito, que exclui todos os alimentos derivados de animais por
                   razões éticas. Por isso, é diferente do vegetarianismo, que permite
-                  alimentos de origem <br>animal, porém somente os que não implicam
+                  alimentos de origem animal, porém somente os que não implicam
                   sacrifício dos animais.</p>
               </div>
               <div class="carousel-item">
-                <h2 class="text-center fw-bolder" id=curiosidades>2. Vontade de comer carne</h2>
-                <p class="text-center fw-bolder fs-5" id="titulo">
+                <h2 class="text-center fw-bolder text-carroussel">2. Vontade de comer carne</h2>
+                <p class="fw-bolder fs-2" id="text">
                   Comer carne pode ser algo mais cultural do que uma necessidade
-                  biológica. <br> Muitos adeptos do veganismo relatam como perderam
-                  totalmente a vontade de comer carne depois de <br> se acostumarem aos seus
-                  hábitos alimentares veganos. Muitos desses adeptos apontam que <br> a carne
+                  biológica. Muitos adeptos do veganismo relatam como perderam
+                  totalmente a vontade de comer carne depois de se acostumarem aos seus
+                  hábitos alimentares veganos. Muitos desses adeptos apontam que a carne
                   deixa de despertar desejo depois de um tempo sem consumi-la.
                   </p>
               </div>
               <div class="carousel-item">
-                  
+                <h2 class="text-center fw-bolder text-carroussel">3. Veganismo x Vegetarianismo</h2>
+                <p class="fw-bolder fs-3" id="text">
+                  Veganismo e vegetarianismo não são as mesmas coisas. Quem é vegano não
+                  consome nenhum tipo de produto ou alimento que tenha origem animal.
+                  Isso inclui produtos cosméticos, roupas, entre outras coisas. Já o
+                  vegetariano é mais flexível. Ele não come carne, mas consome alimentos
+                  como ovos e leite e também consome outros produtos que tenham algum
+                  componente de origem animal.
+                  </p>
+              </div>
+              <div class="carousel-item">
+                <h2 class="text-center fw-bolder text-carroussel">4. Receitas veganas</h2>
+                <p class="fw-bolder fs-3" id="text">
+                  O primeiro livro de receitas veganas foi publicado em 1910. A obra se
+                  chamava “No animal food: two essays and 100 recipes” e foi escrita
+                  pelo britânico Rupert H. Wheldon.
+                  </p>
+              </div>
+              <div class="carousel-item">
+                <h2 class="text-center fw-bolder text-carroussel">5. Ajuda na meditação</h2>
+                <p class="fw-bolder fs-3" id="text">
+                  Os praticantes de meditação também relatam os benefícios de ficar sem
+                  comer carne e produtos de origem animal. Para quem tem um estilo de
+                  vida mais voltado para as práticas espirituais, excluir esses
+                  alimentos da dieta pode ajudar a deixar a mente mais tranquila e mais
+                  focada para práticas como a meditação e o relaxamento.
+                  </p>
+              </div>
+              <div class="carousel-item">
+                <h2 class="text-center fw-bolder text-carroussel">6. Veganismo na Grécia Antiga</h2>
+                <p class="fw-bolder fs-3" id="text">
+                  Os relatos mais antigos nos contam que o filósofo e matemático grego
+                  Pitágoras foi um defensor de uma alimentação vegetal. Segundo ele, a
+                  alimentação humana deveria ocorrer sem derramamento de sangue. O termo
+                  “dieta pitagórica” é usado como sinônimo de uma dieta vegana.
+                  </p>
+              </div>
+              <div class="carousel-item">
+                <h2 class="text-center fw-bolder text-carroussel">7. Saúde</h2>
+                <p class="fw-bolder fs-3" id="text">
+                  Diversos estudos sobre o veganismo associam efeitos positivos de saúde
+                  com a maior utilização de produtos de origem vegetal e restrição de
+                  produtos oriundos do reino animal. De acordo com inúmeros estudos
+                  científicos – cada vez mais frequentes e – , o consumo de carnes está
+                  diretamente associado ao maior risco de doenças crônicas e
+                  degenerativas como diabetes, obesidade, hipertensão e alguns tipos de câncer.
+                  </p>
+              </div>
+              <div class="carousel-item">
+                <h2 class="text-center fw-bolder text-carroussel">8. Impactos para o meio ambiente</h2>
+                <p class="fw-bolder fs-3" id="text">
+                  Um dos pontos defendido pelo veganismo seria a preservação do meio
+                  ambiente, uma vez que, segundo a ONU, o setor pecuário é o maior
+                  responsável pela erosão de solos e contaminação de mananciais
+                  aquíferos do mundo. A ONU também estimou que cerca de 14,5% das
+                  emissões de gases do efeito estufa oriundas de atividades humanas têm
+                  origem no setor pecuário. A maior parte do desmatamento da Amazônia
+                  tem sua origem na produção de carnes, laticínios e ovos. 97% do farelo
+                  de soja e 60% do milho produzidos globalmente são utilizados não para
+                  consumo humano, mas para virar ração para as fazendas e granjas
+                  industriais, produzindo alimentos a uma eficiência muito baixa.
+                  </p>
+              </div>
+              <div class="carousel-item">
+                <h2 class="text-center fw-bolder text-carroussel">9. Menos estresse</h2>
+                <p class="fw-bolder fs-3" id="text">
+                  O consumo de carne tem um problema que vai além da ingestão dela.
+                  Dependendo de como o animal for tratado em cativeiro e como for
+                  abatido, pode liberar hormônios ligado ao estresse e medo. E depois
+                  consumimos esses hormônios.
+                  </p>
+              </div>
+              <div class="carousel-item">
+                <h2 class="text-center fw-bolder text-carroussel">10. Dieta rica em nutrientes</h2>
+                <p class="fw-bolder fs-3" id="text">
+                  Um dos pontos fortes de uma dieta vegana é a quantidade de nutrientes,
+                  vitaminas e fibras que você pode ingerir. Como costuma ter alimentos
+                  mais saudáveis em sua composição, essa dieta pode ajudar até mesmo a
+                  prevenir algumas doenças e a manter o organismo funcionando bem. O
+                  importante é conversar com especialistas e pedir para um nutricionista
+                  ajudar no plano alimentar. Dessa forma, você poderá ter uma
+                  alimentação saudável e sem se preocupar com falta de nutrientes.
+                  </p>
               </div>
           </div>
       </div>
   </main>   
-    <h1 class="text-left fw-bolder" id="quems">Quem Somos?</h1>
+
+  <section class="seção">
+    <h1 class="text-center fw-bolder" id="quems">Quem Somos?</h1>
     <aside class="laranja">
       <h1 class="text-left fw-bolder">História</h1>
       <p id="quem" class="fw-bolder">
-        Fundado em 2022, nosso grupo foi criado a partir de uma única ideia, na sociedade atual o mercado vegano ainda é extremamente nichado e não se tornou algo que todos conseguem aproveitar totalmente. Com esse pensamento, nosso grupo começou a moldar um aplicativo que pudesse ajudar essa comunidade, antes de se tornar o que é hoje, o projeto teve diversas faces, porém, após muita analize, foi concordado que essa era a melhor abordagem para a situação.
+        Fundado em 2022, nosso grupo foi criado a partir de uma única ideia, na sociedade atual o mercado vegano ainda é extremamente nichado e não se tornou algo
+        que todos conseguem aproveitar totalmente. Com esse pensamento, nosso grupo começou a moldar um aplicativo que pudesse ajudar essa comunidade, antes de se 
+        tornar o que é hoje, o projeto teve diversas faces, porém, após muita analize, foi concordado que essa era a melhor abordagem para a situação.
       </p>
     </aside>
     <aside class="branco">
-      <h1 class="text-left fw-bolder">Objetivo</h1>
-      <p class="fw-bolder">
-        Inspots, é uma plataforma de divulgação de estabelecimentos, voltados principalmente para pessoas veganas e vegetarianas, expandindo também para restaurantes considerados convencionais, mas que tenham em sua disposição, produtos específicos para esse grupo. Nosso objetivo é desmistificar o veganismo e inserir o mercado vegano no ciclo de restaurantes pelo Brasil.
+      <h1 class="text-left fw-bolder" id="quems">Objetivo</h1>
+      <p id="quem" class="fw-bolder">
+        Inspots, é uma plataforma de divulgação de estabelecimentos, voltados principalmente para pessoas veganas e vegetarianas, expandindo também para restaurantes
+        considerados convencionais, mas que tenham em sua disposição, produtos específicos para esse grupo. Nosso objetivo é desmistificar o veganismo e inserir o
+        mercado vegano no ciclo de restaurantes pelo Brasil.
       </p>
     </aside>
+    </section>
     
-    <h1 class="text-left fw-bolder">Valores</h1>
-    <section class=""></section>
   </body>
-  
 </html>
