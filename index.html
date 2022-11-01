@@ -9,7 +9,8 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
-  <link rel="shortcut icon" type="image/x-icon" href="inspots_lgp-main/img/logo.png">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
   
@@ -18,12 +19,18 @@
     <nav class="navbar navbar-expand-lg bg-light shadow-sm p-3 mb-5 bg-body rounded border menu" id="nav">
       <div class="container-fluid fixed">
         <a class="navbar-brand" href="#">
-            <img src="inspots_lgp-main/img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"> <b>Inspots</b>
+            <img src="img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"> <b>Inspots</b>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse position-absolute top-2 end-0" id="navbarSupportedContent">
+        </ul>
+        <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#titulo1"><b>Curiosidades</b></a>
+          </li>
+        </ul>
           <ul class="navbar-nav me-2 mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#quem"><b>Quem Somos</b></a>
@@ -31,7 +38,7 @@
           </ul>
           <ul class="navbar-nav me-2 mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#how"><b>Como Funciona</b></a>
+              <a class="nav-link active" aria-current="page" href="#funciona"><b>Como Funciona</b></a>
             </li>
           </ul>
         </div>
@@ -40,10 +47,10 @@
     <!--Fim do Menu responsivo-->
     <aside>
       <h1 class="texto1 fw-bolder">Pratos veganos e vegetarianos <h1 class="texto2 fw-bolder">em qualquer estabelecimento</h1></h1>
-      <a href="https://play.google.com/store/games?hl=pt_BR&gl=US"><img class="appstore" src="img/Google play.png" width="70%"></a>
-      <a href="https://www.apple.com/br/app-store/"><img class="appstore" src="img/App store.png" width="70%"></a>
+      <a href="https://play.google.com/store/games?hl=pt_BR&gl=US"><img class="appstore" src="../inspots_lgp-main/img/Google play.png" width="70%"></a>
+      <a href="https://www.apple.com/br/app-store/"><img class="appstore" src="../inspots_lgp-main/img/App store.png" width="70%"></a>
     </aside>
-    <img src="img/pratoimg.png" class="prato" width="35%" >
+    <img src="../inspots_lgp-main/img/pratoimg.png" class="prato" width="35%" >
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     
     <main>
@@ -158,8 +165,8 @@
       </div>
   </main>   
 
-  <main class="seção" id="quems">
-    <h1 class="text-center fw-bolder">Quem Somos?</h1>
+  <main class="seção">
+    <h1 class="text-center fw-bolder" id="quems">Quem Somos?</h1>
     <aside class="laranja">
       <h1 class="text-left fw-bolder">História</h1>
       <p id="quem" class="fw-bolder">
@@ -178,7 +185,7 @@
     </aside>
     </main>
     
-    <div class="v967_1189" id"how">
+    <div class="v967_1189" id="funciona">
       <span class="v967_1190"><b>Crie sua conta para usufruir do nosso aplicativo.</b></span>
       <span class="v967_1194"><b>Explore e escolha um entre diversos restaurantes e pratos.</b></span>
       <span class="v967_1200"><b>Organize encontros com seus amigos através do nosso app e aproveite</b></span>
@@ -206,5 +213,18 @@
       <div class="name"></div>
       </div>
     </div>
+
+    <footer class="rodape-prin">
+      <hr style="width: 100%; color: #FC7A1E; height:30px; border-width:5px">
+        <div style=" margin-left: 10%; margin-top: 5%;">
+          <i class="large material-icons d-inline-block align-text-top" style="color:#F2994A">call</i><b>+55 (11) 4002-8922</b>   
+          <i class="large material-icons d-inline-block align-text-top" style="color:#F2994A; margin-left: 10%;">location_on</i><b>Fiap School - Avenida Lins de Vasconcelos </b>   
+          <i class="large material-icons d-inline-block align-text-top" style="color:#F2994A; margin-left: 10%;">print</i><b>(123) 456-7890</b> 
+          <img src="img/logolegal.png" style="width: 140px; margin-left: 20%;">
+        </div>
+      <hr style="width: 100%; color: #FC7A1E; height:30px; border-width:5px; margin-top: 5%;">
+      <p style="margin-left:43%; margin-top: 1%;">Copyright &copy; 2022 • ABC Company</p>
+      </footer>
+
   </body>
 </html>
