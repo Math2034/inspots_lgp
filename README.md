@@ -27,13 +27,13 @@ Este repositório contém a **landing page** do projeto, que passou por um redes
 
 | Hero | Quem Somos |
 |------|------------|
-| ![Before Hero](Before/image1.png) | ![Before Quem Somos](Before/image3.png) |
+| ![Before Hero](img/Before/image1.png) | ![Before Quem Somos](img/Before/image3.png) |
 
 ### Depois
 
 | Hero | Curiosidades | Como Funciona |
 |------|-------------|---------------|
-| ![After Hero](After/image1.png) | ![After Curiosidades](After/image3.png) | ![After Como Funciona](After/image2.png) |
+| ![After Hero](img/After/image1.png) | ![After Curiosidades](img/After/image3.png) | ![After Como Funciona](img/After/image2.png) |
 
 ---
 
@@ -64,15 +64,6 @@ inspots/
 ├── index.html          # Estrutura da página
 ├── styles.css          # Estilos e animações
 ├── img/
-│   ├── logo.png
-│   ├── logolegal.png
-│   ├── inspots.png
-│   ├── pratoimg.png
-│   ├── Home.png
-│   ├── initial.png
-│   ├── Tela_convidar_zap.png
-│   ├── Google Play.png
-│   └── App Store.png
 ├── After/              # Screenshots do redesign
 │   ├── image1.png
 │   ├── image2.png
