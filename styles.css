@@ -1,3 +1,709 @@
+/* ============================================================
+   INSPOTS — Landing Page Stylesheet
+   Author: Inspots Team
+   Description: Styles for the Inspots vegan restaurant finder
+                landing page. Organized by section.
+   ============================================================ */
+
+
+/* ── RESET & BASE
+   Remove default browser margin/padding and set box-sizing
+   ---------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ── DESIGN TOKENS (CSS Variables)
+   Central place to update the color palette and fonts
+   ---------------------------------------------------------- */
+:root {
+  --green:        #2D6A4F;
+  --green-light:  #40916C;
+  --green-pale:   #D8F3DC;
+  --orange:       #FC7A1E;
+  --orange-light: #FFB347;
+  --cream:        #FEFAE0;
+  --dark:         #1B2B1E;
+  --gray:         #6B7280;
+  --white:        #FFFFFF;
+}
+
+
+/* ── GLOBAL
+   ---------------------------------------------------------- */
+html {
+  scroll-behavior: smooth; /* smooth anchor scrolling */
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--dark);
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+
+/* ============================================================
+   NAVIGATION
+   Fixed top bar with blur backdrop
+   ============================================================ */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 6%;
+  background: rgba(254, 250, 224, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(45, 106, 79, .12);
+  animation: slideDown .6s ease;
+}
+
+/* Nav entrance animation */
+@keyframes slideDown {
+  from { transform: translateY(-60px); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
+}
+
+/* Brand logo + name */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.nav-brand .logo-circle {
+  width: 36px; height: 36px;
+  background: var(--green);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.nav-brand .logo-circle span {
+  color: white;
+  font-size: 18px;
+}
+
+.nav-brand strong {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  letter-spacing: -.02em;
+}
+
+/* Nav link list */
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 500;
+  color: var(--gray);
+  letter-spacing: .02em;
+  transition: color .2s;
+}
+
+.nav-links a:hover { color: var(--green); }
+
+/* CTA button inside nav */
+.nav-cta {
+  background: var(--green);
+  color: white !important;
+  padding: 10px 22px;
+  border-radius: 100px;
+  font-weight: 600 !important;
+  transition: background .2s, transform .15s !important;
+}
+
+.nav-cta:hover {
+  background: var(--green-light) !important;
+  transform: scale(1.04);
+}
+
+
+/* ============================================================
+   HERO SECTION
+   Two-column layout: text on the left, phone mockup on the right
+   ============================================================ */
+.hero {
+  min-height: 100vh;
+  padding: 140px 6% 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative green glow in the top-right corner */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -200px; right: -200px;
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(64, 145, 108, .18) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Decorative watermark emoji in the bottom-left */
+.hero::after {
+  content: '🌿';
+  position: absolute;
+  bottom: 60px; left: 5%;
+  font-size: 7rem;
+  opacity: .07;
+  pointer-events: none;
+}
+
+/* Fade-up entrance for hero text */
+.hero-text { animation: fadeUp .8s ease both; }
+
+@keyframes fadeUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+/* "Available on iOS & Android" pill badge */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green-pale);
+  color: var(--green);
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+/* Pulsing dot inside the badge */
+.hero-badge::before {
+  content: '●';
+  font-size: .5rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: .3; }
+}
+
+/* Main hero headline */
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  line-height: 1.12;
+  letter-spacing: -.03em;
+  margin-bottom: 24px;
+}
+
+/* Italic orange accent inside h1 */
+.hero h1 em {
+  font-style: italic;
+  color: var(--orange);
+}
+
+/* Hero subtext / description */
+.hero p {
+  font-size: 1.1rem;
+  color: var(--gray);
+  line-height: 1.7;
+  max-width: 480px;
+  margin-bottom: 44px;
+}
+
+/* App store button row */
+.store-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.store-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--dark);
+  color: white;
+  padding: 14px 24px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: transform .2s, background .2s;
+}
+
+.store-btn:hover {
+  background: var(--green);
+  transform: translateY(-2px);
+}
+
+.store-btn .icon { font-size: 1.6rem; }
+
+.store-btn .label { display: flex; flex-direction: column; }
+.store-btn .label small {
+  font-size: .7rem;
+  opacity: .7;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.store-btn .label strong { font-size: 1rem; }
+
+
+/* ── Phone Mockup (right side of hero)
+   ---------------------------------------------------------- */
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeUp .8s .2s ease both; /* slight delay vs hero text */
+  position: relative;
+}
+
+/* Outer phone shell */
+.phone-mockup {
+  width: 280px;
+  height: 560px;
+  background: var(--dark);
+  border-radius: 44px;
+  border: 8px solid #333;
+  box-shadow:
+    0 40px 80px rgba(0, 0, 0, .25),
+    0 0 0 1px rgba(255, 255, 255, .05);
+  position: relative;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* Phone screen content area */
+.phone-inner {
+  width: 100%; height: 100%;
+  background: linear-gradient(160deg, var(--green-pale) 0%, #B7E4C7 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.phone-inner .emoji-big { font-size: 5rem; }
+
+/* Individual restaurant cards inside the mockup */
+.phone-card {
+  background: white;
+  border-radius: 16px;
+  padding: 14px 18px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
+}
+
+.phone-card .dot {
+  width: 38px; height: 38px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.phone-card .info { display: flex; flex-direction: column; }
+.phone-card .info strong { font-size: .85rem; color: var(--dark); }
+.phone-card .info span  { font-size: .72rem; color: var(--gray); }
+
+/* "Open" status tag on each card */
+.phone-card .tag {
+  margin-left: auto;
+  background: var(--green-pale);
+  color: var(--green);
+  font-size: .65rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 100px;
+}
+
+/* Floating badges that appear beside the phone mockup */
+.float-badge {
+  position: absolute;
+  background: white;
+  border-radius: 14px;
+  padding: 10px 16px;
+  font-size: .8rem;
+  font-weight: 600;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+  display: flex; align-items: center; gap: 8px;
+  white-space: nowrap;
+}
+
+.float-badge.left  { left: -60px; top: 30%;    animation: float 3s ease-in-out infinite; }
+.float-badge.right { right: -50px; bottom: 30%; animation: float 3s .5s ease-in-out infinite; }
+
+/* Gentle bobbing animation for floating badges */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+
+/* ============================================================
+   SHARED SECTION STYLES
+   ============================================================ */
+section { padding: 100px 6%; }
+
+/* Small uppercase label above section titles */
+.section-label {
+  display: inline-block;
+  color: var(--green);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+/* Main title for each section */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  line-height: 1.2;
+  letter-spacing: -.025em;
+  margin-bottom: 20px;
+}
+
+
+/* ============================================================
+   STATS BAR
+   Three key numbers displayed below the hero
+   ============================================================ */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px; /* thin green lines between cells via background */
+  background: rgba(45, 106, 79, .1);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.stat-item {
+  background: var(--cream);
+  padding: 48px 36px;
+  text-align: center;
+}
+
+.stat-item .number {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: var(--green);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.stat-item .desc { color: var(--gray); font-size: .95rem; }
+
+
+/* ============================================================
+   CURIOSIDADES (Fun Facts) SECTION
+   Dark background with card grid
+   ============================================================ */
+#curiosidades { background: var(--dark); color: white; }
+
+/* Override label and title colors for dark background */
+#curiosidades .section-label { color: var(--orange-light); }
+#curiosidades .section-title  { color: white; }
+
+/* Responsive auto-fill card grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 52px;
+}
+
+.curio-card {
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 20px;
+  padding: 32px;
+  transition: background .2s, transform .2s;
+  cursor: default;
+}
+
+.curio-card:hover {
+  background: rgba(255, 255, 255, .1);
+  transform: translateY(-4px);
+}
+
+/* Large decorative number in the top of each card */
+.curio-card .num {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(252, 122, 30, .3); /* faded orange */
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.curio-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--orange-light);
+}
+
+.curio-card p {
+  font-size: .88rem;
+  color: rgba(255, 255, 255, .65);
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   ABOUT (Quem Somos) SECTION
+   Two-column: quote card on the left, text on the right
+   ============================================================ */
+#sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.sobre-visual { position: relative; }
+
+/* Green-pale card that holds the quote and mini stats */
+.sobre-bg-card {
+  background: var(--green-pale);
+  border-radius: 32px;
+  padding: 52px 40px;
+  position: relative;
+}
+
+/* Decorative large leaf emoji in the card corner */
+.sobre-bg-card .big-leaf {
+  position: absolute;
+  top: -20px; right: -20px;
+  font-size: 5rem;
+  opacity: .25;
+  transform: rotate(20deg);
+}
+
+.sobre-bg-card blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--green);
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+/* Small stat pills inside the about card */
+.sobre-stat {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.sobre-stat-item { display: flex; flex-direction: column; }
+.sobre-stat-item strong {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--green);
+  font-family: 'Playfair Display', serif;
+}
+.sobre-stat-item span { font-size: .82rem; color: var(--gray); }
+
+/* Dietary restriction tag row */
+.sobre-text .tag-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.tag {
+  background: var(--green-pale);
+  color: var(--green);
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: .82rem;
+  font-weight: 600;
+}
+
+
+/* ============================================================
+   HOW IT WORKS (Como Funciona) SECTION
+   Green background with 3 step cards
+   ============================================================ */
+#funciona { background: var(--green); color: white; }
+#funciona .section-label { color: var(--orange-light); }
+#funciona .section-title { color: white; }
+
+/* Three-column steps grid */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 64px;
+}
+
+.step {
+  position: relative;
+  padding: 40px 32px;
+  background: rgba(255, 255, 255, .1);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, .15);
+  transition: background .2s, transform .2s;
+}
+
+.step:hover {
+  background: rgba(255, 255, 255, .15);
+  transform: translateY(-4px);
+}
+
+/* Faded large step number as decorative background text */
+.step-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, .15);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.step-icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.step h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.step p {
+  font-size: .9rem;
+  color: rgba(255, 255, 255, .75);
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   FOOTER
+   Dark background with brand info and contact details
+   ============================================================ */
+footer {
+  background: var(--dark);
+  color: rgba(255, 255, 255, .6);
+  padding: 60px 6% 32px;
+}
+
+/* Top row: brand description + contact */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.footer-brand { max-width: 280px; }
+
+.footer-brand .nav-brand {
+  color: white;
+  margin-bottom: 16px;
+  display: inline-flex;
+}
+
+.footer-brand p { font-size: .88rem; line-height: 1.7; }
+
+/* Contact info column */
+.footer-contact { display: flex; flex-direction: column; gap: 14px; }
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: .9rem;
+}
+
+/* Icon wrapper for each contact line */
+.footer-contact-item .ic {
+  width: 36px; height: 36px;
+  background: rgba(255, 255, 255, .08);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Bottom copyright bar */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, .08);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .82rem;
+}
+
+.footer-bottom a { color: var(--orange); text-decoration: none; }
+
+
+/* ============================================================
+   RESPONSIVE — Tablet & Mobile
+   ============================================================ */
+
+/* Tablet / small screens */
+@media (max-width: 900px) {
+  /* Hero becomes single column, text centered */
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-top: 120px;
+  }
+  .hero p { margin: 0 auto 44px; }
+  .store-buttons { justify-content: center; }
+
+  /* Hide phone mockup on smaller screens to save space */
+  .hero-visual { display: none; }
+
+  /* Stack stats, about, steps, and footer vertically */
+  .stats-row { grid-template-columns: 1fr; }
+  #sobre      { grid-template-columns: 1fr; }
+  .steps      { grid-template-columns: 1fr; }
+  .footer-top { flex-direction: column; }
+
+  /* Hide nav links (hamburger menu would replace in production) */
+  .nav-links  { display: none; }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .cards-grid { grid-template-columns: 1fr; }
+  .store-btn .label strong { font-size: .9rem; }
+}
+
+/* OLD CODE */
+
+/*  
 html,body{
     scroll-behavior: smooth;
 }
@@ -261,4 +967,4 @@ aside {
     font-size: 15px;
     font-family: "arial", sans-serif;
 }
-
+*/

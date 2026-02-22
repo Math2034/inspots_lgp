@@ -1,5 +1,341 @@
 <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inspots — Encontre seu lugar vegano</title>
 
+  <!-- Google Fonts: Playfair Display (headings) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       Fixed top bar with logo, nav links, and a CTA button
+       ============================================================ -->
+  <nav>
+    <!-- Brand logo + app name -->
+    <a class="nav-brand" href="#">
+      <div class="logo-circle"><span>🌿</span></div>
+      <strong>Inspots</strong>
+    </a>
+
+    <!-- Navigation links -->
+    <ul class="nav-links">
+      <li><a href="#curiosidades">Curiosidades</a></li>
+      <li><a href="#sobre">Quem Somos</a></li>
+      <li><a href="#funciona">Como Funciona</a></li>
+      <li><a href="#funciona" class="nav-cta">Baixar App</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO SECTION
+       Main headline, description, store buttons, and phone mockup
+       ============================================================ -->
+  <section class="hero">
+
+    <!-- Left column: headline + CTA buttons -->
+    <div class="hero-text">
+      <div class="hero-badge">Disponível no iOS e Android</div>
+      <h1>Pratos veganos e vegetarianos <em>em qualquer lugar</em></h1>
+      <p>Encontre restaurantes com opções veganas, vegetarianas, sem glúten e muito mais. Explore, avalie e organize encontros com seus amigos.</p>
+
+      <!-- App store download buttons -->
+      <div class="store-buttons">
+        <a href="https://play.google.com/store" class="store-btn">
+          <span class="icon">▶</span>
+          <div class="label">
+            <small>Disponível no</small>
+            <strong>Google Play</strong>
+          </div>
+        </a>
+        <a href="https://www.apple.com/br/app-store/" class="store-btn">
+          <span class="icon"></span>
+          <div class="label">
+            <small>Baixe na</small>
+            <strong>App Store</strong>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right column: phone mockup with floating badges -->
+    <div class="hero-visual">
+      <div class="float-badge left">🥗 100% Vegano</div>
+
+      <!-- Simulated phone screen showing the app UI -->
+      <div class="phone-mockup">
+        <div class="phone-inner">
+          <div class="emoji-big">🌱</div>
+
+          <!-- Sample restaurant cards -->
+          <div class="phone-card">
+            <div class="dot" style="background:#D8F3DC">🥙</div>
+            <div class="info">
+              <strong>Green Bowl SP</strong>
+              <span>⭐ 4.9 · Vegano · Sem Glúten</span>
+            </div>
+            <div class="tag">Aberto</div>
+          </div>
+
+          <div class="phone-card">
+            <div class="dot" style="background:#FFE8D6">🍜</div>
+            <div class="info">
+              <strong>Raízes Café</strong>
+              <span>⭐ 4.7 · Vegetariano · Delivery</span>
+            </div>
+            <div class="tag">Aberto</div>
+          </div>
+
+          <div class="phone-card">
+            <div class="dot" style="background:#D8F3DC">🌮</div>
+            <div class="info">
+              <strong>Terra Viva</strong>
+              <span>⭐ 4.8 · Vegano · Sem Lactose</span>
+            </div>
+            <div class="tag">Aberto</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="float-badge right">📍 Perto de você</div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       STATS BAR
+       Three key numbers that reinforce trust and scale
+       ============================================================ -->
+  <div style="padding: 0 6% 80px; background: var(--cream);">
+    <div class="stats-row">
+      <div class="stat-item">
+        <div class="number">2.4k+</div>
+        <div class="desc">Restaurantes cadastrados</div>
+      </div>
+      <div class="stat-item">
+        <div class="number">98%</div>
+        <div class="desc">Avaliações positivas</div>
+      </div>
+      <div class="stat-item">
+        <div class="number">12k+</div>
+        <div class="desc">Usuários ativos</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       CURIOSIDADES (Fun Facts) SECTION
+       Grid of 8 informational cards about veganism
+       ============================================================ -->
+  <section id="curiosidades">
+    <div class="section-label">Você sabia?</div>
+    <h2 class="section-title">Curiosidades<br>do Veganismo</h2>
+
+    <div class="cards-grid">
+
+      <!-- Card 1 -->
+      <div class="curio-card">
+        <div class="num">01</div>
+        <h3>O termo não é novo</h3>
+        <p>A palavra "veganismo" foi usada pela primeira vez em 1944, por Donald Watson, para definir um vegetarianismo mais restrito que exclui todos os derivados animais por razões éticas.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="curio-card">
+        <div class="num">02</div>
+        <h3>Questão cultural</h3>
+        <p>Comer carne pode ser mais cultural do que biológico. Muitos veganos relatam perder totalmente a vontade de comer carne após se adaptarem à nova dieta.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="curio-card">
+        <div class="num">03</div>
+        <h3>Vegan ≠ Vegetariano</h3>
+        <p>Quem é vegano não consome nenhum produto de origem animal — nem cosméticos, roupas, entre outros. O vegetariano é mais flexível, evitando apenas carnes.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="curio-card">
+        <div class="num">04</div>
+        <h3>Primeiro livro em 1910</h3>
+        <p>O primeiro livro de receitas veganas foi "No animal food: two essays and 100 recipes", publicado em 1910 pelo britânico Rupert H. Wheldon.</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="curio-card">
+        <div class="num">05</div>
+        <h3>Origem na Grécia Antiga</h3>
+        <p>Pitágoras foi um dos primeiros defensores da alimentação vegetal. A "dieta pitagórica" é usada até hoje como sinônimo de dieta vegana.</p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="curio-card">
+        <div class="num">06</div>
+        <h3>Impacto ambiental</h3>
+        <p>Segundo a ONU, o setor pecuário é responsável por 14,5% das emissões de gases do efeito estufa e é o maior agente de erosão de solos no mundo.</p>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="curio-card">
+        <div class="num">07</div>
+        <h3>Rica em nutrientes</h3>
+        <p>Uma dieta vegana bem planejada pode fornecer vitaminas, fibras e antioxidantes em abundância, ajudando a prevenir doenças crônicas como diabetes e hipertensão.</p>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="curio-card">
+        <div class="num">08</div>
+        <h3>Menos estresse</h3>
+        <p>Dependendo do abate, animais liberam hormônios de estresse que acabam sendo consumidos junto com a carne. Eliminar esses alimentos pode beneficiar sua saúde hormonal.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT (Quem Somos) SECTION
+       Company story and mission, with a highlighted quote card
+       ============================================================ -->
+  <section id="sobre" style="padding: 100px 6%;">
+
+    <!-- Left column: quote + mini stats card -->
+    <div class="sobre-visual">
+      <div class="sobre-bg-card">
+        <span class="big-leaf">🍃</span>
+        <blockquote>"Desmistificar o veganismo e inserir o mercado vegano no ciclo de restaurantes pelo Brasil."</blockquote>
+        <p style="color: var(--gray); font-size:.9rem; line-height:1.7;">
+          Nossa missão começa com uma ideia simples: todo mundo merece encontrar facilmente restaurantes que respeitem suas escolhas alimentares.
+        </p>
+
+        <!-- Key metrics row -->
+        <div class="sobre-stat">
+          <div class="sobre-stat-item"><strong>2022</strong><span>Fundação</span></div>
+          <div class="sobre-stat-item"><strong>SP</strong><span>Base</span></div>
+          <div class="sobre-stat-item"><strong>🌱</strong><span>100% vegano friendly</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column: company story text + dietary tags -->
+    <div class="sobre-text">
+      <div class="section-label">Quem somos</div>
+      <h2 class="section-title">Nascemos para ajudar a comunidade vegana</h2>
+
+      <p style="color:var(--gray); font-size:1.05rem; line-height:1.8; margin-bottom:20px;">
+        Fundado em 2022, o Inspots surgiu de uma percepção simples: o mercado vegano ainda é extremamente nichado e não se tornou algo que todos conseguem aproveitar plenamente.
+      </p>
+      <p style="color:var(--gray); font-size:1.05rem; line-height:1.8;">
+        Com esse pensamento, nossa equipe moldou uma plataforma que vai além dos restaurantes 100% veganos — incluindo também estabelecimentos convencionais que oferecem opções específicas para esse grupo.
+      </p>
+
+      <!-- Dietary preference tags -->
+      <div class="tag-list">
+        <span class="tag">🌱 Vegano</span>
+        <span class="tag">🥦 Vegetariano</span>
+        <span class="tag">🌾 Sem Glúten</span>
+        <span class="tag">🥛 Sem Lactose</span>
+        <span class="tag">🫘 Sem Soja</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       HOW IT WORKS (Como Funciona) SECTION
+       Three-step guide on how to use the app
+       ============================================================ -->
+  <section id="funciona">
+    <div class="section-label">Simples assim</div>
+    <h2 class="section-title">Como funciona<br>o Inspots</h2>
+
+    <div class="steps">
+
+      <!-- Step 1: Create account -->
+      <div class="step">
+        <div class="step-num">01</div>
+        <span class="step-icon">👤</span>
+        <h3>Crie sua conta</h3>
+        <p>Cadastre-se gratuitamente e informe suas restrições alimentares e preferências para receber sugestões personalizadas.</p>
+      </div>
+
+      <!-- Step 2: Explore restaurants -->
+      <div class="step">
+        <div class="step-num">02</div>
+        <span class="step-icon">🔍</span>
+        <h3>Explore restaurantes</h3>
+        <p>Busque por localização, tipo de culinária ou restrição alimentar. Cada prato é detalhado com ingredientes e avaliações reais.</p>
+      </div>
+
+      <!-- Step 3: Invite friends -->
+      <div class="step">
+        <div class="step-num">03</div>
+        <span class="step-icon">🎉</span>
+        <h3>Reúna seus amigos</h3>
+        <p>Use nossa função de convite para organizar encontros e compartilhar seus restaurantes favoritos com quem você ama.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       Brand summary, contact info, and copyright
+       ============================================================ -->
+  <footer>
+    <div class="footer-top">
+
+      <!-- Brand blurb -->
+      <div class="footer-brand">
+        <a class="nav-brand" href="#" style="color:white; text-decoration:none;">
+          <div class="logo-circle"><span>🌿</span></div>
+          <strong>Inspots</strong>
+        </a>
+        <p>A plataforma que conecta pessoas veganas e vegetarianas aos melhores restaurantes do Brasil.</p>
+      </div>
+
+      <!-- Contact details -->
+      <div class="footer-contact">
+        <div class="footer-contact-item">
+          <div class="ic">📞</div>
+          <span>+55 (11) 4002-8922</span>
+        </div>
+        <div class="footer-contact-item">
+          <div class="ic">📍</div>
+          <span>FIAP — Av. Lins de Vasconcelos, SP</span>
+        </div>
+        <div class="footer-contact-item">
+          <div class="ic">✉️</div>
+          <span>contato@inspots.com.br</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Copyright bar -->
+    <div class="footer-bottom">
+      <span>© 2024 Inspots. Todos os direitos reservados.</span>
+      <span>Feito com 🌱 para a comunidade vegana</span>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<!-- OLD CODE -->
+
+<!--  
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
@@ -15,7 +351,7 @@
 </head>
   
   <body>
-    <!--Menu responsivo-->
+
     <nav class="navbar navbar-expand-lg bg-light shadow-sm p-3 mb-5 bg-body rounded border menu" id="nav">
       <div class="container-fluid fixed">
         <a class="navbar-brand" href="#">
@@ -44,7 +380,7 @@
         </div>
       </div>
     </nav>
-    <!--Fim do Menu responsivo-->
+
     <aside>
       <h1 class="texto1 fw-bolder">Pratos veganos e vegetarianos <h1 class="texto2 fw-bolder">em qualquer estabelecimento</h1></h1>
       <a href="https://play.google.com/store/games?hl=pt_BR&gl=US"><img class="appstore" src="../inspots_lgp-main/img/Google play.png" width="70%"></a>
@@ -228,3 +564,4 @@
 
   </body>
 </html>
+-->
