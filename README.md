@@ -103,7 +103,7 @@ inspots/
 
 ## 👥 Equipe
 
-Desenvolvido na **FIAP** — Avenida Lins de Vasconcelos, São Paulo.
+Desenvolvido na **FIAP** Avenida Lins de Vasconcelos, São Paulo.
 
 ---
 
