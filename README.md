@@ -16,6 +16,8 @@
 
 ## 📋 Sobre o Projeto
 
+> Projeto pessoal/estudo para portfólio. O app, as métricas, os contatos e os links de loja apresentados na página são elementos ilustrativos de um protótipo; não representam uma empresa ou produto atualmente operando.
+
 O **Inspots** é uma plataforma que conecta pessoas veganas e vegetarianas aos melhores restaurantes do Brasil, incluindo estabelecimentos convencionais que ofereçam opções para celíacos, intolerantes à lactose, e outros grupos.
 
 Este repositório contém a **landing page** do projeto, que passou por um redesign completo com foco em modernidade, responsividade e identidade visual alinhada à proposta vegana/saudável.

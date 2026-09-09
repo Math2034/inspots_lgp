@@ -968,3 +968,16 @@ aside {
     font-family: "arial", sans-serif;
 }
 */
+/* Portfolio disclosure for illustrative prototype content. */
+.demo-note {
+  color: var(--gray, #6b705c);
+  font-size: 0.78rem;
+  line-height: 1.4;
+  margin-top: 1rem;
+}
+
+.stats-note {
+  text-align: center;
+  margin: 1.5rem auto 0;
+  max-width: 46rem;
+}
